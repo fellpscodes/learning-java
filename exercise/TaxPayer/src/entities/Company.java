@@ -1,6 +1,6 @@
 package entities;
 
-public class Company extends TaxPayer{
+public class Company extends TaxPayer {
 
     private int numberOfEmployees;
 

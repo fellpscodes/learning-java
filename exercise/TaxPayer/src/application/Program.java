@@ -18,7 +18,7 @@ public class Program {
         List<TaxPayer> list = new ArrayList<>();
 
         System.out.print("Enter the number of tax payers: ");
-        int n =  sc.nextInt();
+        int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
             System.out.println("Tax payer #" + i + " data: ");
@@ -41,14 +41,14 @@ public class Program {
             }
         }
 
-            System.out.println("");
-            double sum = 0;
-            System.out.println("TAXES PAID: ");
-            for (TaxPayer person : list) {
-                System.out.printf("%s: $ %.2f%n", person.getName(), person.getAnnualIncome());
-                sum = sum + person.tax();
-            }
-            System.out.println("");
-            System.out.print("TOTAL TAXES: $ " + sum);
+        System.out.println("");
+        double sum = 0;
+        System.out.println("TAXES PAID: ");
+        for (TaxPayer person : list) {
+            System.out.printf("%s: $ %.2f%n", person.getName(), person.getAnnualIncome());
+            sum = sum + person.tax();
         }
+        System.out.println("");
+        System.out.print("TOTAL TAXES: $ " + sum);
     }
+}
